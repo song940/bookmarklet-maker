@@ -1,5 +1,25 @@
 @import url(https://lsong.org/css/stylesheet.css);
+@import url(https://lsong.org/stylesheets/form.css);
+@import url(https://lsong.org/stylesheets/button.css);
 
-.headline {
-    font-family: system-ui, sans-serif;
+textarea {
+  height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.preview {
+  text-align: center;
+  border: 10px dashed gray;
+  font-size: 2em;
+  margin: 10px 0;
+  padding: 20px;
+}
+
+.preview p {
+  font-size: 14px;
+}
+
+input, textarea {
+  font-family: monospace;
 }

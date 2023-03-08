@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Liu Song’s Pages</title>
+  <title>Bookmarklet Maker</title>
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="homepage, blog, music and etc.">
   <meta name="author" content="Lsong">
   <meta name="theme-color" content="#ffffff">
   <meta name="color-scheme" content="dark light">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Liu Song’s Pages">
+  <meta name="apple-mobile-web-app-title" content="Bookmarklet Maker">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@song940">
@@ -27,7 +27,7 @@
     <header class="header">
       <h1>
         <img src="https://lsong.org/icon.svg" alt="logo" class="logo">
-        Liu Song’s Pages
+        Bookmarklet Maker
       </h1>
       <nav class="nav nav-bar">
         <a href="//lsong.org">home</a>
@@ -47,7 +47,8 @@
           Hi, I'm Liu Song, a full-stack developer with a passion for open-source software.
           I have experience in web and mobile development, as well as a background in embedded systems and network
           protocols.
-          I enjoy writing tech <a href="//lsong.org/posts">blogs</a> and developing <a href="//lsong.org/apps.html">applications</a> in my spare time.
+          I enjoy writing tech <a href="//lsong.org/posts">blogs</a> and developing <a
+            href="//lsong.org/apps.html">applications</a> in my spare time.
           Proficient in Node.js, Golang, and server operations, I'm always eager to learn more and contribute to the
           community.
           Check out my GitHub <a href="github.com/song940">@song940</a> for some of my projects and feel free to connect
@@ -57,7 +58,27 @@
         </p>
       </section>
 
-      <section id="app"></section>
+      <section>
+        <h2>Bookmarklet Maker</h2>
+        <form class="form">
+          <label for="name">Name:</label>
+          <input name="name" type="text" required placeholder="Your bookmarklet name" value="Bookmarklet Maker" >
+          <label for="code">Code:</label>
+          <textarea name="code" required placeholder="Put your code here ..." ></textarea>
+        </form>
+        <div>
+          <div class="preview">
+            <p>Drag this link to your web browser's bookmarks bar</p>
+            <div id="bookmarklet" >
+            <a href="">Bookmarklet Maker</a>
+            </div>
+          </div>
+          <label for="output">Output:</label>
+          <input name="output" type="text" class="input" readonly>
+          <label for="html">HTML:</label>
+          <input name="html" type="text" class="input" readonly>
+        </div>
+      </section>
 
       <hr />
       <section class="subscribe">
